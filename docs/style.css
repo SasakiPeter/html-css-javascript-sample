@@ -1,12 +1,10 @@
 :root {
-    --base-color: hsla(0, 0%, 20%, 1);
+    --base-color: hsla(180, 0%, 20%, 1);
     --light-main-color: hsla(180, 100%, 95%, 1);
-    --main-color: hsla(180, 100%, 50%, 1);
-    --dark-main-color: hsla(180, 100%, 45%, 1);
+    /* --main-color: hsla(180, 100%, 40%, 1); */
+    --dark-main-color: hsla(180, 100%, 40%, 1);
     --accent-color: hsla(0, 50%, 50%, 1);
 }
-
-/* reset css */
 
 a {
     text-decoration: none;
@@ -14,9 +12,8 @@ a {
 
 body {
     margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
 }
-
-/*            */
 
 .navbar {
     height: 50px;
@@ -87,6 +84,10 @@ h3 {
     border-left: 5px solid var(--dark-main-color);
 }
 
+p {
+    color: var(--base-color);
+}
+
 code {
     color: var(--accent-color);
     background-color: #DDD;
@@ -94,7 +95,11 @@ code {
     padding: 0.2rem 0.4rem;
 }
 
-aside ul {
+.sidebar ul {
+    color: var(--dark-main-color);
+}
+
+.sidebar a {
     color: var(--dark-main-color);
 }
 
@@ -110,17 +115,9 @@ footer p {
     font-size: 0.8em;
 }
 
-/* @media(min-width:768px) {
-    main {
-        display: flex;
-    }
-    article {
-        width: 70%;
-    }
-    aside {
-        width: 30%;
-    }
-} */
+footer a {
+    color: var(--base-color);
+}
 
 @media(min-width:576px) {
     main {
@@ -129,7 +126,7 @@ footer p {
     article {
         width: 70%;
     }
-    aside {
+    .sidebar {
         width: 30%;
         padding: 0 1em;
     }
