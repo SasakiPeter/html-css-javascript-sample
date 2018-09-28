@@ -12,19 +12,15 @@ a {
     text-decoration: none;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     margin: 0;
 }
 
+/*            */
+
 .navbar {
     height: 50px;
-    background-color: var(--light-main-color);
+    background-color: var(--dark-main-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,24 +29,58 @@ body {
 nav ul {
     display: flex;
     justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
     margin: 0 1em;
 }
 
+nav ul li a {
+    color: white;
+}
+
 main {
     padding: 2em;
 }
 
+article header {
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/ai-artificial-intelligence-code.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+}
+
 h1 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    z-index: 999;
+}
+
+h2 {
     padding: 0.5em;
     color: var(--base-color);
     background: var(--light-main-color);
     border-left: 5px solid var(--dark-main-color);
 }
 
-h2, h3 {
+h3 {
     padding: 0.25em 0.5em;
     color: var(--base-color);
     background: transparent;
@@ -59,8 +89,13 @@ h2, h3 {
 
 code {
     color: var(--accent-color);
-    background-color: #CCC;
-    border-radius: 5px;
+    background-color: #DDD;
+    border-radius: 0.25em;
+    padding: 0.2rem 0.4rem;
+}
+
+aside ul {
+    color: var(--dark-main-color);
 }
 
 footer {
@@ -73,4 +108,29 @@ footer {
 
 footer p {
     font-size: 0.8em;
+}
+
+/* @media(min-width:768px) {
+    main {
+        display: flex;
+    }
+    article {
+        width: 70%;
+    }
+    aside {
+        width: 30%;
+    }
+} */
+
+@media(min-width:576px) {
+    main {
+        display: flex;
+    }
+    article {
+        width: 70%;
+    }
+    aside {
+        width: 30%;
+        padding: 0 1em;
+    }
 }
