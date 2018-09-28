@@ -1,0 +1,20 @@
+:root {
+    --base-color: hsla(0, 0%, 20%, 1);
+    --light-main-color: hsla(180, 100%, 80%, 1);
+    --main-color: hsla(180, 100%, 50%, 1);
+    --dark-main-color: hsla(180, 100%, 45%, 1);
+    --accent-color: hsla(0, 100%, 50%, 1);
+}
+
+code {
+    color: rgb(200, 0, 0);
+    background-color: #CCC;
+    border-radius: 5px;
+}
+
+h1, h2, h3 {
+    padding: 0.25em 0.5em;
+    color: var(--base-color);
+    background: transparent;
+    border-left: 5px solid var(--dark-main-color);
+}

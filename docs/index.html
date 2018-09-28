@@ -1,15 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
     <title>初めてのHTML＆CSS</title>
 </head>
 
 <body>
-    <h1>初めてのHTML＆CSS</h1>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#HTML">HTMLとは</a>
+                </li>
+                <li>
+                    <a href="#CSS">CSSとは</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <header>
+                <h1>初めてのHTML＆CSS</h1>
+            </header>
+            <p>ここではプログラミングを始める初学者に向けた...</p>
+            <section id="HTML">
+                <h2>HTMLとは</h2>
+                <p>HTMLとは、Webページにどんな内容を記載するかを
+                    <code>&lt;タグ&gt;&lt;/タグ&gt;</code>でくくり、印をつけることで、その内容が文章の中でどんな役割を持つのか、他の文章とどのように繋がっているのかを明確にする言語です。
+                </p>
+                <p>したがって、文字やコンテンツの大きさ、色、配置などのスタイルはHTML内では記述すべきではありません。</p>
+                <p></p>
+                <aside>
+                    <h3>コラム</h3>
+                    <p>HTMLはあくまでマークアップ言語であるため、プログラミング言語とは区別されます。</p>
+                    <p>しかし、プログラミングを学ぶ上ではほぼ必須の知識であるため、最初に学ぶのに最適でしょう。</p>
+                </aside>
+            </section>
+            <section id="CSS">
+                <h2>CSSとは</h2>
+                <p>CSSとは、</p>
+            </section>
+        </article>
+        <aside>
+            <h2>サイドバー</h2>
+            <p></p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Copyright@
+            <a href="https://github.com/SasakiPeter/html-css-sample">SasakiPeter</a>
+        </p>
+    </footer>
+
 </body>
 
 </html>
