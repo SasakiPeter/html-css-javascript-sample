@@ -1,1 +1,1 @@
-# html-css-sample
+# html-css-javascript-sample
