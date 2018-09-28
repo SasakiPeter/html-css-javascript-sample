@@ -6,10 +6,28 @@
     --accent-color: hsla(0, 50%, 50%, 1);
 }
 
-code {
-    color: var(--accent-color);
-    background-color: #CCC;
-    border-radius: 5px;
+/* reset css */
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    padding: 2em;
 }
 
 h1 {
@@ -24,4 +42,18 @@ h2, h3 {
     color: var(--base-color);
     background: transparent;
     border-left: 5px solid var(--dark-main-color);
+}
+
+code {
+    color: var(--accent-color);
+    background-color: #CCC;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.8em;
 }
